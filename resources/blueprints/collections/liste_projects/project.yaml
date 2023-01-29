@@ -19,83 +19,79 @@ sections:
           always_show_set_button: false
           previews: true
           sets:
-            quote:
-              display: Quote
+            video:
+              display: Video
               fields:
                 -
-                  handle: bard_field
-                  field:
-                    collapse: false
-                    always_show_set_button: false
-                    previews: true
-                    buttons:
-                      - bold
-                      - italic
-                      - unorderedlist
-                      - orderedlist
-                      - removeformat
-                      - quote
-                      - anchor
-                    save_html: true
-                    toolbar_mode: floating
-                    link_noopener: true
-                    link_noreferrer: true
-                    target_blank: true
-                    reading_time: false
-                    fullscreen: true
-                    allow_source: true
-                    enable_input_rules: true
-                    enable_paste_rules: true
-                    antlers: false
-                    remove_empty_nodes: false
-                    display: 'Bard Field'
-                    type: bard
-                    icon: bard
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    always_save: false
-                -
-                  handle: author
+                  handle: video_title
                   field:
                     input_type: text
                     antlers: false
-                    display: author
+                    display: 'Video Title'
                     type: text
                     icon: text
                     listable: hidden
                     instructions_position: above
                     visibility: visible
                     always_save: false
-            related_articles:
-              display: 'Related Articles'
-              fields:
                 -
-                  handle: related_entries
+                  handle: video_description
                   field:
-                    mode: default
-                    create: false
-                    collections:
-                      - liste_projects
-                    display: 'Related Entries'
-                    type: entries
-                    icon: entries
+                    antlers: false
+                    display: 'Video Description'
+                    type: textarea
+                    icon: textarea
                     listable: hidden
                     instructions_position: above
                     visibility: visible
                     always_save: false
-            embed:
-              display: Embed
+                -
+                  handle: video_link
+                  field:
+                    display: 'Video Link'
+                    type: video
+                    icon: video
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+            images:
+              display: Images
               fields:
                 -
-                  handle: embed_template
+                  handle: images_title
                   field:
-                    hide_partials: false
-                    blueprint: false
-                    folder: components
-                    display: embed_template
-                    type: template
-                    icon: template
+                    input_type: text
+                    antlers: false
+                    display: 'Images Title'
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+                -
+                  handle: images_description
+                  field:
+                    antlers: false
+                    display: 'Images Description'
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+                -
+                  handle: images
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Images
+                    type: assets
+                    icon: assets
                     listable: hidden
                     instructions_position: above
                     visibility: visible
@@ -127,6 +123,43 @@ sections:
           display: 'Article content'
           type: bard
           icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: sidebar_content
+        field:
+          fields:
+            -
+              handle: sidebar_module_title
+              field:
+                input_type: text
+                antlers: false
+                display: 'Sidebar Module Title'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: sidebar_module_content
+              field:
+                antlers: false
+                display: 'Sidebar Module Content'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+          mode: table
+          add_row: 'Ajouter un module'
+          reorderable: true
+          display: 'Sidebar Content'
+          type: grid
+          icon: grid
           listable: hidden
           instructions_position: above
           visibility: visible

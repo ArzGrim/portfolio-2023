@@ -1,0 +1,51 @@
+<div class="project-img-container project-module left">
+
+{{ article_content }}
+
+    {{ if type == "text" }}
+        <div class="text">
+        {{ text }}
+        </div>
+
+    {{ elseif type == "video" }}
+
+        <div class="video-module">
+            
+            {{ if video_title }}
+                <h2>{{ video_title }}</h2>
+            {{ endif }}
+
+            {{ if video_description }}
+                <p>{{ video_description | nl2br }}</p>
+            {{ endif }}
+
+            {{ if video_link | is_embeddable }}
+                <!-- Youtube and Vimeo -->
+                <iframe src="{{ video_link | embed_url }}"></iframe>
+            {{ else }}
+                <!-- Other HTML5 video types -->
+                <video src="{{ video_link | embed_url }}"></video>
+            {{ /if }}
+        </div>
+
+    {{ elseif type == "images" }}
+
+        <div class="images-module">
+            {{ if images_title }}
+                <h2>{{ images_title }}</h2>
+            {{ endif }}
+
+            {{ if images_description }}
+                <p>{{ images_description | nl2br }}</p>
+            {{ endif }}
+
+            {{ images }}
+                <img src="{{ url }}" alt="{{ alt }}" />
+            {{ /images }}
+        </div>
+
+    {{ endif }}
+
+{{ /article_content }}
+
+</div>

@@ -1,0 +1,15 @@
+<div class="project-text-container project-module right">
+
+    {{ sidebar_content }}
+
+        <div class="sidebar-module">
+            {{ if sidebar_module_title }}
+                <h2>{{ sidebar_module_title }}</h2>
+            {{ endif }}
+            
+            <p>{{ sidebar_module_content | nl2br }}</p>
+        </div>
+
+    {{ /sidebar_content }}
+
+</div>

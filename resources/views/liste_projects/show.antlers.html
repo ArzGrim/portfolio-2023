@@ -1,25 +1,25 @@
 <div class="project pages">
     {{ collection:liste_projects }}
+
     <a href="/portfolio">retour en arrière</a>
     <div class="hero-project project-module">
         {{ project_thumbnail }} 
             <img class="thumbnail" src="{{ url }}" alt="">
         {{ /project_thumbnail }}           
         <div class="text-box">
-            <h1>{{ title }}</h1>
-            <div class="tags">photo / video / graphisme</div>
-            <h2>{{ project_description }}</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, magni laudantium. Eos, exercitationem commodi inventore, saepe reprehenderit sit excepturi et accusantium mollitia, ipsam iure delectus corporis dolorem dolor quibusdam nesciunt?</p>
+            <h2>{{ title }}</h2>
+            {{# <div class="tags">photo / video / graphisme</div> #}}
+            <p>{{ project_description }}</p>
         </div>
     </div>
 
     <div class="project-content">
-        {{ article_content }}
-
-        {{ /article_content }}
-        {{ partial:components/project-text }}
-        {{ partial:components/project-img }}
+        {{ partial:components/project-content }}
     </div>
+    <div class="project-sidebar">
+        {{ partial:components/project-sidebar }}
+    </div>
+
     {{ collection:liste_projects }}
 </div>
 
