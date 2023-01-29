@@ -1,0 +1,64 @@
+
+
+.homepage {
+    @apply overflow-x-scroll lg:overflow-hidden;
+    @apply grid-rows-auto;
+    @apply grid;
+    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
+}
+
+
+.photo-arthur {
+    @apply col-full-mobile lg:col-half-right ;
+    @apply lg:row-inline;
+    padding: 25px;
+    @apply border-black;
+    @apply border-b border-l-0 lg:border-b-0 lg:border-l;
+    object-fit: cover;
+    @apply h-[600px] lg:h-img-desktop;
+    width: 100%;
+
+}
+
+.homepage-content {
+    @apply lg:row-inline;
+    @apply col-full-mobile lg:col-half-left;
+    padding: 25px;
+    align-self: center;
+}
+
+.homepage-content p {
+    margin-top: 45px;
+    font-weight: 400;
+    @apply text-p-mobile lg:text-p-desktop;
+}
+
+.homepage-content h2 {
+    text-transform: uppercase;
+    font-family: var(--font-one);
+    font-weight: 800;
+    @apply text-p-mobile lg:text-p-desktop;
+}
+
+.homepage-content h1 {
+    @apply text-h-mobile lg:text-h-desktop;
+    font-family: var(--font-one);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.homepage-content ul,
+.homepage-content .logline {
+    margin-top: 5px;
+}
+
+.homepage-content ul li{
+    font-weight: 500;
+    @apply text-p-mobile lg:text-p-desktop;
+}
+
+
+.homepage-content .logline {
+    @apply text-p-mobile lg:text-p-desktop;
+}
+

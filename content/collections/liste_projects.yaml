@@ -1,0 +1,13 @@
+title: 'Liste - projects'
+template: liste_projects/show
+layout: layout
+revisions: false
+route: '/portfolio/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'

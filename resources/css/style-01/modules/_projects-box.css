@@ -1,0 +1,57 @@
+.project-box:first-child {
+    border-top: 0px;
+}
+
+.project-box {
+    padding: 25px;
+    border-top: 1px solid #000;
+    background-color: #fff;
+    width: 100%;
+    @apply grid;
+    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
+    @apply grid-rows-01-content-mobile lg:grid-rows-auto;
+    @apply gap-[25px];
+}
+
+
+.project-box img {
+    @apply col-feed-thumbnail-mobile lg:col-feed-thumbnail-desktop;
+    @apply row-feed-thumbnail-mobile lg:row-feed-thumbnail-desktop;
+    @apply w-[100%];
+    @apply h-[250px] md:h-[300px];
+    object-fit: cover;
+    border: 1px solid #000;
+}
+
+
+.text-box {
+    @apply col-feed-text-mobile lg:col-feed-text-desktop;
+    @apply row-feed-text-mobile lg:row-feed-text-desktop;
+    @apply grid;
+    @apply grid-rows-auto;
+    height: 100%;
+}
+
+.text-box h2 {
+    place-self: start;
+    font-family: var(--font-one);
+    text-transform: uppercase;
+    font-weight: 800;
+    @apply tracking-title-mobile lg:tracking-title-desktop;
+    @apply leading-title;
+    @apply text-h-mobile lg:text-h-desktop;
+}
+
+
+.text-box p {
+    place-self: end;
+    font-weight: 300;
+    @apply text-p-mobile lg:text-p-desktop;
+}
+
+.project-box:hover {
+    filter: invert(1);
+}
+.project-box:hover img {
+    filter: invert(1);
+}

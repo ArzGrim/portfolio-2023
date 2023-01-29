@@ -1,0 +1,44 @@
+:root {
+    /* ———————————————————————————————— Global */
+    --font-bold: 700;
+    --font-regular: 500;
+    --font-light: 300;
+    /* ———————————————————————————————— style 01 */
+    /* ———————— font */
+    --font-one: 'aileron', sans-serif;
+    
+
+
+    /* ———————————————————————————————— style 01 */
+    /* ———————— font */
+    --font-two: 'cooper-black', serif;
+
+
+
+
+}
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none !important;
+    @apply text-base;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

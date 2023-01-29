@@ -1,0 +1,36 @@
+        <!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/rhn5wpj.css">
+        
+
+
+
+
+        <link id="link1" rel="stylesheet" href="{{ mix src='css/style1.css' }}">
+        <link id="link2" rel="stylesheet" href="{{ mix src='css/style2.css' }}" disabled>
+        <link id="link3" rel="stylesheet" href="{{ mix src='css/style3.css' }}" disabled>
+        <link id="link4" rel="stylesheet" href="{{ mix src='css/style4.css' }}" disabled>
+
+</head>
+<body class="global-container">
+        <div class="loader"></div>
+                {{ partial:components/header }}
+                {{ partial:components/aside }}
+
+                <main>
+
+                    {{ template_content }}
+                </main>
+                {{ partial:components/footer }}
+
+        <script src="{{ mix src='/js/site.js' }}"></script>
+</body>
+</html>

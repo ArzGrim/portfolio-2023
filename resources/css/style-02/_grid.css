@@ -1,0 +1,23 @@
+body {
+    @apply grid;
+    @apply grid-cols-02-global-mobile lg:grid-cols-02-global-desktop;
+    @apply grid-rows-02-global;
+    height: 100vh;
+    column-gap: 25px;
+    z-index: 1000;
+    position: relative;
+}
+
+header {
+    @apply col-header-desktop;
+    @apply row-02-header;    
+}
+
+aside {
+    @apply col-aside-desktop;
+    @apply row-02-header;
+}
+
+main {
+    @apply col-main-desktop;
+}

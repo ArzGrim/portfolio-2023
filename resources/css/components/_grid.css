@@ -1,0 +1,64 @@
+/* ———————————————————————————————— Grid header */
+header {
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    height: 50px;
+    align-items: center;
+}
+
+header nav ul li {
+    place-self: center;
+    text-transform: uppercase;
+}
+
+
+
+
+/* ———————————————————————————————— Grid aside */
+aside {
+    height: 100vh;
+}
+aside ul {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    align-items: center;
+    justify-self: center;
+}
+
+aside ul li {
+    place-self: center;
+    align-items: center;
+}
+
+aside ul li:hover {
+    width: 160px;
+    height: 160px;
+    box-shadow: #000 3px 3px 10px;
+}
+
+/* ||||||||| –––––––––––––––– > faudra enlever ça plus tard */
+aside img {
+    width: 150px;
+    height: 150px;
+    background-color: #e3e3e3;
+}
+
+/* ———————————————————————————————— Grid footer */
+footer {
+    font-size: 20px;
+}
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50px;
+    align-items: center;
+}
+footer ul li {
+    place-self: center;
+    text-transform: uppercase;
+}

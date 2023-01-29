@@ -1,0 +1,14 @@
+footer {
+    font-size: 20px;
+    border-top: 2px solid #000;
+}
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50px;
+    align-items: center;
+}
+footer ul li {
+    place-self: center;
+    text-transform: uppercase;
+}

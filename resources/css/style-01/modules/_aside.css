@@ -1,0 +1,55 @@
+aside { 
+    @apply hidden lg:grid;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 20px;
+}
+aside ul {
+    padding: 25px;
+    align-items: center;
+    justify-items: center;
+    @apply row-main;
+}
+
+aside ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button-style:hover {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+.button-style {
+    width: 95px;
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Drafting* Mono';
+}
+.button-style::after {
+    transform: rotate(-90deg);
+    position: absolute;
+}
+
+
+#button1::after {
+    content: 'style one';
+}
+#button2::after {
+    content: 'style two';
+}
+#button3::after {
+    content: 'style three';
+}
+#button4::after {
+    content: 'style four';
+}
+

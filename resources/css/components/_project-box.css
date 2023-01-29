@@ -1,0 +1,33 @@
+.project-box {
+    /* cursor: pointer; */
+    width: auto;
+}
+
+svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0%;
+}
+svg:hover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 100%;
+}
+.image-box {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+}
+.image-box img {
+    width: 400px;
+}
+
+.text-box h2 {
+    font-size: 30px;
+}
+.text-box p {
+    font-size: 18px;
+}

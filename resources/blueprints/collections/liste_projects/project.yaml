@@ -1,0 +1,141 @@
+title: projects
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        import: project
+      -
+        handle: article_content
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          sets:
+            quote:
+              display: Quote
+              fields:
+                -
+                  handle: bard_field
+                  field:
+                    collapse: false
+                    always_show_set_button: false
+                    previews: true
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                    save_html: true
+                    toolbar_mode: floating
+                    link_noopener: true
+                    link_noreferrer: true
+                    target_blank: true
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    remove_empty_nodes: false
+                    display: 'Bard Field'
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+                -
+                  handle: author
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: author
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+            related_articles:
+              display: 'Related Articles'
+              fields:
+                -
+                  handle: related_entries
+                  field:
+                    mode: default
+                    create: false
+                    collections:
+                      - liste_projects
+                    display: 'Related Entries'
+                    type: entries
+                    icon: entries
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+            embed:
+              display: Embed
+              fields:
+                -
+                  handle: embed_template
+                  field:
+                    hide_partials: false
+                    blueprint: false
+                    folder: components
+                    display: embed_template
+                    type: template
+                    icon: template
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Article content'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
