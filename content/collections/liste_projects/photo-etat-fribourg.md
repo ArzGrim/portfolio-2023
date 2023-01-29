@@ -6,7 +6,7 @@ project_description: 'Réalisation de la photo du gouvernement de l''état de Fr
 project_thumbnail:
   - photo-gouv-fribourg2023.webp
 updated_by: 3ad507ae-ea31-4021-967a-c8cd23067640
-updated_at: 1674999744
+updated_at: 1675000761
 project_bard:
   -
     type: set
@@ -31,7 +31,7 @@ article_content:
       values:
         type: video
         video_title: 'Making Off'
-        video_link: 'https://vimeo.com/791837360'
+        video_link: 'https://youtu.be/HXiqHVNRWKM'
         video_description: |-
           Montage: Jean-Michel
           Tournage: L'autre

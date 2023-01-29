@@ -1,0 +1,49 @@
+.project {
+    @apply grid;
+    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
+}
+
+.project a,
+.hero-project {
+    grid-column: 1 / -1;
+}
+
+.button-return {
+    border-bottom: 1px solid #000;
+    @apply text-p-desktop;
+    padding: 25px;
+}
+
+.hero-project {
+    @apply grid;
+    @apply grid-rows-01-content-mobile md:grid-rows-01-content-desktop;
+    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
+    column-gap: 25px;
+    border-bottom: 1px solid #000 ;
+}
+
+.thumbail-container {
+    grid-column: 1 / 6;
+    margin: 25px 0px 25px 25px;
+    border: 1px solid #000;
+}
+
+.hero-project .text-box {
+    padding: 25px 0;
+    grid-column: 6 / 13;
+}
+
+.project-content {
+
+    @apply col-auto lg:col-half-left;
+    border-right: 1px solid #000;
+    
+}
+
+.project-sidebar {
+    @apply col-auto lg:col-half-right;
+}
+
+.sidebar-module {
+    border-bottom: 1px solid #000;
+}

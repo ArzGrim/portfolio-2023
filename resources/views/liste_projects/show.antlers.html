@@ -1,11 +1,13 @@
 <div class="project pages">
     {{ collection:liste_projects }}
 
-    <a href="/portfolio">retour en arrière</a>
+    <a class="button-return" href="/portfolio">retour en arrière</a>
     <div class="hero-project project-module">
-        {{ project_thumbnail }} 
-            <img class="thumbnail" src="{{ url }}" alt="">
-        {{ /project_thumbnail }}           
+        <div class="thumbail-container">
+            {{ project_thumbnail }}
+                <img class="thumbnail" src="{{ url }}" alt="">
+            {{ /project_thumbnail }}
+        </div>
         <div class="text-box">
             <h2>{{ title }}</h2>
             {{# <div class="tags">photo / video / graphisme</div> #}}
