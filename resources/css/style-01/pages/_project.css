@@ -33,7 +33,7 @@
 
 .project-thumbnail img {
     border: 1px solid #000;
-    height: 400px;
+    @apply h-[200px] md:h-[400px];
     width: 100%;
     object-fit: cover;
 }

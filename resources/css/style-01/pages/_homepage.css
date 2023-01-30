@@ -15,7 +15,7 @@
     @apply border-black;
     @apply border-b border-l-0 lg:border-b-0 lg:border-l;
     object-fit: cover;
-    @apply h-[600px] lg:h-img-desktop;
+    @apply h-[400px] lg:h-img-desktop;
     width: 100%;
 
 }

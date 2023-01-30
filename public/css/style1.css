@@ -84,7 +84,7 @@ footer{
 body,
 main,
 aside{
-  grid-template-rows: 25px 75px auto 45px 25px;
+  grid-template-rows: 25px 75px auto 45px 45px;
 }
 nav,
 footer ul{
@@ -220,7 +220,7 @@ aside ul {
 .photo-arthur {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 600px;
+    height: 400px;
 
 }
 @media (min-width: 976px){
@@ -349,7 +349,14 @@ aside ul {
 }
 .project-thumbnail img {
     border: 1px solid #000;
+    height: 200px;
+}
+@media (min-width: 768px){
+  .project-thumbnail img{
     height: 400px;
+  }
+}
+.project-thumbnail img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;

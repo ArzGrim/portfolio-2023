@@ -85,7 +85,7 @@ module.exports = {
 
       gridTemplateRows: {
         //—————————————————————| Style 01
-        '01-global': '25px 75px auto 45px 25px',
+        '01-global': '25px 75px auto 45px 45px',
         'auto': 'auto',
 
         '01-content-desktop': 'auto',
