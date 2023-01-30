@@ -1,49 +1,137 @@
 .project {
-    @apply grid;
-    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
+    width: 100%;
 }
-
-.project a,
-.hero-project {
-    grid-column: 1 / -1;
-}
-
 .button-return {
+    padding: 15px 25px;
+    width: 100%;
+    display: block;
     border-bottom: 1px solid #000;
-    @apply text-p-desktop;
-    padding: 25px;
+    font-size: 14px;
+}
+.button-return::before {
+    content: '<';
+    font-size: 20px;
+    position: relative;
+    left: -5px;
+    top: 2px;
+}
+.button-return:hover {
+    font-weight: 600;
 }
 
 .hero-project {
     @apply grid;
-    @apply grid-rows-01-content-mobile md:grid-rows-01-content-desktop;
     @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
     column-gap: 25px;
-    border-bottom: 1px solid #000 ;
+    padding: 25px;
+    border-bottom:1px solid #000;
 }
 
-.thumbail-container {
-    grid-column: 1 / 6;
-    margin: 25px 0px 25px 25px;
+.project-thumbnail {
+    @apply col-full-mobile md:col-third-left;
+}
+
+.project-thumbnail img {
     border: 1px solid #000;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.hero-project .text-box {
-    padding: 25px 0;
-    grid-column: 6 / 13;
+.hero-project h2 {
+    @apply my-[25px] md:my-0;
+}
+
+
+.project-content-container {
+    @apply grid;
+    @apply grid-cols-01-content-mobile md:grid-cols-01-project-content-desktop;
 }
 
 .project-content {
+    @apply col-full-mobile md:col-half-content-left;
+    @apply border-r-0 md:border-r;
 
-    @apply col-auto lg:col-half-left;
-    border-right: 1px solid #000;
-    
+}
+.project-content div {
+    padding: 25px;
 }
 
+.project-content div:nth-child(1n + 2) {
+    border-top: 1px solid #000;
+}
+
+.project-content h2 {
+    font-family: var(--font-one);
+    @apply tracking-title-mobile lg:tracking-title-desktop;
+    @apply leading-title;
+    @apply text-h-mobile lg:text-h-desktop;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 15px ;
+}
+
+.video-module iframe, video {
+    width: 100%;
+    border: 1px solid #000;
+    @apply h-[300px] md:h-[600px];
+    margin-top: 25px;
+}
+
+.images-module img {
+    width: 100%;
+    @apply h-[300px] md:h-[600px];
+    object-fit: cover;
+    margin-top: 25px;
+    border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .project-sidebar {
-    @apply col-auto lg:col-half-right;
+    @apply col-full-mobile md:col-half-content-right;
+
 }
 
 .sidebar-module {
+    padding: 25px;
     border-bottom: 1px solid #000;
 }
+
+.sidebar-module h2,
+.project-content h2 {
+    font-family: var(--font-one);
+    @apply tracking-title-mobile lg:tracking-title-desktop;
+    @apply leading-title;
+    @apply text-h-mobile lg:text-h-desktop;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 15px ;
+}
+
+.sidebar-module p,
+.project-content p {
+    font-weight: 400;
+    @apply text-p-mobile lg:text-p-desktop;
+}
+
+
+
+

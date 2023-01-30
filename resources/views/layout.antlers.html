@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="icon" type="image/x-icon" href="/assets/Favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.co1m">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/rhn5wpj.css">
@@ -26,9 +28,9 @@
                 {{ partial:components/aside }}
 
                 <main>
-
                     {{ template_content }}
                 </main>
+
                 {{ partial:components/footer }}
 
         <script src="{{ mix src='/js/site.js' }}"></script>

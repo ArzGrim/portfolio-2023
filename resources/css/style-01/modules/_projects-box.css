@@ -45,13 +45,11 @@
 
 .text-box p {
     place-self: end;
-    font-weight: 300;
+    font-weight: 400;
     @apply text-p-mobile lg:text-p-desktop;
 }
 
 .project-box:hover {
-    filter: invert(1);
-}
-.project-box:hover img {
-    filter: invert(1);
+    background-color: #000;
+    color: #fff;
 }

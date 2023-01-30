@@ -41,6 +41,8 @@ module.exports = {
 
         '01-content-desktop': 'repeat(12, 1fr)',
         '01-content-mobile': 'repeat(3, 1fr)',
+
+        '01-project-content-desktop': '2fr 1fr',
         
         '02-global-desktop': 'auto 1000px 250px auto',
         '02-global-mobile': '15px auto 15px',
@@ -65,9 +67,19 @@ module.exports = {
         'feed-thumbnail-mobile': ' 1 / 4',
         'feed-text-mobile': '1 / 4',
 
-        'half-left': '1 / 6',
+
+        'half-left': '1 / 7',
         'half-right': '7 / 13',
-        'full-mobile': '1 / 4',
+
+        'half-content-left': '1 / 2',
+        'half-content-right': '2 / 3',
+
+        'third-right': '8 / 13',
+        'third-center': '5 / 9',
+        'third-left': '1 / 5',
+
+
+        'full-mobile': '1 / -1',
       },
 
 
