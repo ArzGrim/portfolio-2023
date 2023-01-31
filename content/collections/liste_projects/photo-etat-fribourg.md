@@ -6,7 +6,7 @@ project_description: 'Réalisation de la photo du gouvernement de l''état de Fr
 project_thumbnail:
   - photo-gouv-fribourg2023.webp
 updated_by: 3ad507ae-ea31-4021-967a-c8cd23067640
-updated_at: 1675039563
+updated_at: 1675170272
 project_bard:
   -
     type: set
@@ -43,17 +43,16 @@ sidebar_content:
   -
     id: ldheotz5
     sidebar_module_title: 'Compétences acquises'
-    sidebar_module_content: |-
-      - Collaboration avec un photographe Professionnel
-      - Réalisation Photo
-      - Réalisation d’un performance artistique
-      - Storytelling
+    sidebar_module_list:
+      - 'Collaboration avec un photographe Professionnel'
+      - 'Réalisation Photo'
+      - 'Réalisation d’un performance artistique'
   -
     id: ldhepdx8
     sidebar_module_title: 'Outils utilisés'
-    sidebar_module_content: |-
-      - Adobe Indesign
-      - Collage Papier
+    sidebar_module_list:
+      - 'Adobe Indesign'
+      - 'Collage Papier'
       - Smartphone
-      - Materiels photo (éclairage, appareils, ...)
+      - 'Materiels photo (éclairage, appareils, ...)'
 ---

@@ -127,11 +127,17 @@
 }
 
 .sidebar-module p,
+.sidebar-module ul li,
 .project-content p {
     font-weight: 400;
     @apply text-p-mobile lg:text-p-desktop;
 }
 
+.sidebar-module-list li {
+    list-style: "-" !important;
+    margin-left: 10px ;
+
+}
 
 
 

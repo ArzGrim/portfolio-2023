@@ -17,7 +17,6 @@
     object-fit: cover;
     @apply h-[400px] lg:h-img-desktop;
     width: 100%;
-
 }
 
 .homepage-content {

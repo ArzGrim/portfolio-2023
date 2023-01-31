@@ -6,7 +6,17 @@
                 <h2>{{ sidebar_module_title }}</h2>
             {{ endif }}
             
-            <p>{{ sidebar_module_content | nl2br }}</p>
+            {{ if sidebar_module_content }}
+                <p>{{ sidebar_module_content | nl2br }}</p>
+            {{ endif }}
+
+            {{ if sidebar_module_list }}
+                <ul class="sidebar-module-list">
+                    {{ sidebar_module_list }}
+                        <li>{{ value }}</li>
+                    {{ /sidebar_module_list }}
+                </ul>
+            {{ endif }}
         </div>
 
     {{ /sidebar_content }}

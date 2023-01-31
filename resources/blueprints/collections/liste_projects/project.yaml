@@ -154,6 +154,16 @@ sections:
                 instructions_position: above
                 visibility: visible
                 always_save: false
+            -
+              handle: sidebar_module_list
+              field:
+                display: 'sidebar module list'
+                type: list
+                icon: list
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
           mode: table
           add_row: 'Ajouter un module'
           reorderable: true

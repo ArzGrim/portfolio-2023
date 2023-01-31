@@ -1,3 +1,8 @@
+.project-box:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 .project-box:first-child {
     border-top: 0px;
 }
@@ -49,7 +54,4 @@
     @apply text-p-mobile lg:text-p-desktop;
 }
 
-.project-box:hover {
-    background-color: #000;
-    color: #fff;
-}
+
