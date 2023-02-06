@@ -25,13 +25,15 @@
                 <p>{{ video_description | nl2br }}</p>
             {{ endif }}
 
-            {{ if video_link | is_embeddable }}
-                <!-- Youtube and Vimeo -->
-                <iframe src="{{ video_link | embed_url }}"></iframe>
-            {{ else }}
-                <!-- Other HTML5 video types -->
-                <video src="{{ video_link | embed_url }}"></video>
-            {{ /if }}
+            <div class="video-container">
+                {{ if video_link | is_embeddable }}
+                    <!-- Youtube and Vimeo -->
+                    <iframe class="responsive-iframe" src="{{ video_link | embed_url }}"></iframe>
+                {{ else }}
+                    <!-- Other HTML5 video types -->
+                    <video src="{{ video_link | embed_url }}"></video>
+                {{ /if }}
+            </div>
         </div>
 
     {{ elseif type == "images" }}

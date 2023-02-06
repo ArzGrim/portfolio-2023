@@ -4,9 +4,9 @@ blueprint: project
 title: 'Photo de l''état de Fribourg 2023'
 project_description: 'Réalisation de la photo du gouvernement de l''état de Fribourg. Projet réaliser durant mon stage chez eikon LAB'
 project_thumbnail:
-  - photo-gouv-fribourg2023.webp
+  - projects/photo_etat/photo-gouv.webp
 updated_by: 3ad507ae-ea31-4021-967a-c8cd23067640
-updated_at: 1675170272
+updated_at: 1675266163
 project_bard:
   -
     type: set
@@ -18,6 +18,15 @@ project_bard:
   -
     type: paragraph
 article_content:
+  -
+    type: set
+    attrs:
+      id: ldlu5p5x
+      values:
+        type: video
+        video_link: 'https://vimeo.com/794815306'
+  -
+    type: paragraph
   -
     type: set
     attrs:
@@ -37,8 +46,8 @@ article_content:
         type: images
         images_title: 'Behind the scenes'
         images:
-          - elementor-placeholder-image.png
-          - ef3-placeholder-image.jpeg
+          - projects/photo_etat/rendu_photo_gouvernement.jpg
+          - projects/photo_etat/_mg_3381.jpg
 sidebar_content:
   -
     id: ldheotz5

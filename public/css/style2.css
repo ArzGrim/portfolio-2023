@@ -459,12 +459,6 @@ video {
 /* @import "modules/_homepage.css";
 @import "modules/_portfolio.css";
 @import "modules/_project.css"; */
-.collapse {
-    visibility: collapse;
-}
-.table {
-    display: table;
-}
 body {
   background: linear-gradient(
     217deg,
