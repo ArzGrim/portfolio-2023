@@ -29,7 +29,8 @@ footer ul {
     align-items: center;
     font-weight: var(--font-light);
     grid-auto-flow: column;
-    height: 20vh;
+
+    @apply h-[20vh] lg:h-auto;
     @apply pt-[20px] lg:pt-0;
 }
 

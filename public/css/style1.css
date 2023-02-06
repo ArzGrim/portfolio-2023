@@ -286,7 +286,7 @@ aside ul {
 }
 @media (min-width: 976px) {
     .photo-arthur {
-        height: calc(100vh - 165px);
+        height: calc(100vh - 170px);
     }
 }
 .photo-arthur {
@@ -877,6 +877,13 @@ footer ul {
     font-weight: var(--font-light);
     grid-auto-flow: column;
     height: 20vh;
+}
+@media (min-width: 976px) {
+    footer ul {
+        height: auto;
+    }
+}
+footer ul {
     padding-top: 20px;
 }
 @media (min-width: 976px) {

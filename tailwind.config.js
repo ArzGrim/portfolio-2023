@@ -26,7 +26,7 @@ module.exports = {
     },
     extend: {
       height: {
-        'img-desktop': 'calc(100vh - 165px)',
+        'img-desktop': 'calc(100vh - 170px)',
       },
       screens: {
         sm: '480px',
