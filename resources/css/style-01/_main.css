@@ -6,6 +6,7 @@ body {
 .pages {
   font-family: 'Drafting* Mono';
   font-weight: 400;
+  @apply border-b border-black border-solid lg:border-b-0;
 }
 
 .portfolio,

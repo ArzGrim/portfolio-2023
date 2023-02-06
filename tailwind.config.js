@@ -44,8 +44,11 @@ module.exports = {
 
         '01-project-content-desktop': '2fr 1fr',
         
+        '01-burger-mobile': 'auto 75px',
+        
         '02-global-desktop': 'auto 1000px 250px auto',
         '02-global-mobile': '15px auto 15px',
+
       },
       gridColumn: {
         //—————————————————————| Style 02
@@ -85,12 +88,13 @@ module.exports = {
 
       gridTemplateRows: {
         //—————————————————————| Style 01
-        '01-global': '25px 75px auto 45px 45px',
+        '01-global': '25px 75px auto 45px 25px',
         'auto': 'auto',
-
+        '01-menu': '73px 80vh',
         '01-content-desktop': 'auto',
         '01-content-mobile': '1fr auto',
-
+        
+        '01-menu-footer': 'repeat(4, 1fr)',
         '02-global': '100px auto',
         
       },
@@ -104,7 +108,7 @@ module.exports = {
         'header': '2 / 2',
         'footer': '4 / 4',
         'main': '3 / 4',
-
+        'main-mobile': '1 / 5',
         'feed-thumbnail-desktop': '1 / 1',
         'feed-text-desktop': '1 / 1',
 

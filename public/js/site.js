@@ -29,11 +29,15 @@ if (localStorage.getItem('firstVisit') === null) {
 /***/ (() => {
 
 var burger = document.querySelector('.burger');
-var menu = document.querySelector('.menu');
+var menuHeader = document.querySelector('.menu');
+var menuFooter = document.querySelector('.m-footer');
+var nav = document.querySelector('.nav-container');
 var menuStyles = document.querySelector('.menu-styles');
 burger.addEventListener('click', function () {
   burger.classList.toggle('active');
-  menu.classList.toggle('is-visible');
+  menuHeader.classList.toggle('is-visible-header');
+  menuFooter.classList.toggle('is-visible-footer');
+  nav.classList.toggle('is-active');
   menuStyles.classList.toggle('show');
 });
 

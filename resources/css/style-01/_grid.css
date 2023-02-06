@@ -1,21 +1,12 @@
-header {
-    @apply row-header;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-}
 
-body, 
-header,
-footer {
+
+body {
     @apply grid;
     @apply grid-cols-01-global-mobile md:grid-cols-01-global-desktop;
 }
 
-header,
-footer {
-    @apply grid-rows-auto;
-    @apply col-fullpage-mobile md:col-fullpage-desktop;
-}
+
+
 
 body,
 main,
@@ -23,20 +14,17 @@ aside {
     @apply grid-rows-01-global;
 }
 
-nav,
-footer ul {
-    @apply col-content-mobile md:col-content-mobile;
-}
-nav ul,
-footer ul {
-    @apply grid;
-    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
-}
+
+
+
+
+
 
 
 main {
     @apply grid;
-    @apply row-fullpage-global;
+    @apply row-main-mobile lg:row-fullpage-global;
+
 }
 aside {
     @apply row-fullpage-global;
@@ -53,14 +41,7 @@ main {
     height: 100vh;
 }
 
-footer {  
-    @apply row-footer;
-    @apply grid-rows-auto;
 
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-
-}
 aside ul {
     display: grid;
 }

@@ -1,3 +1,24 @@
+footer {
+    @apply hidden lg:grid;
+    @apply grid-cols-01-global-mobile md:grid-cols-01-global-desktop; 
+    @apply grid-rows-auto;
+    @apply col-fullpage-mobile md:col-fullpage-desktop;
+    @apply row-footer;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    
+}
+footer ul {
+    @apply grid;
+    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
+    @apply grid-rows-01-menu-footer lg:grid-rows-auto;
+
+    @apply col-content-mobile md:col-content-mobile;
+    
+}
+
+
 footer ul {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
@@ -7,4 +28,19 @@ footer ul {
     padding-left: 25px;
     align-items: center;
     font-weight: var(--font-light);
+    grid-auto-flow: column;
+    height: 20vh;
+    @apply pt-[20px] lg:pt-0;
+}
+
+
+.is-visible-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    left: 0;
+
+    @apply grid;
+    grid-template-rows: auto;
+
 }
