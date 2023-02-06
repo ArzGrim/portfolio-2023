@@ -1,7 +1,9 @@
-
+main {
+    @apply overflow-y-hidden;
+}
 
 .homepage {
-    @apply overflow-x-scroll lg:overflow-hidden;
+    @apply overflow-y-scroll overflow-x-hidden lg:overflow-hidden;
     @apply grid-rows-auto;
     @apply grid;
     @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
@@ -15,8 +17,8 @@
     @apply border-black;
     @apply border-b border-l-0 lg:border-b-0 lg:border-l;
     object-fit: cover;
-    @apply h-[400px] lg:h-img-desktop;
-    width: 100%;
+    @apply h-[100%] lg:h-img-desktop;
+    width: 500px;
 }
 
 .homepage-content {

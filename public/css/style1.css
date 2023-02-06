@@ -239,8 +239,12 @@ aside ul {
 @import "modules/_portfolio.css";
 @import "modules/_project.css"; */
 /* ———————————————————————————————— Pages */
+main {
+    overflow-y: hidden;
+}
 .homepage {
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 @media (min-width: 976px) {
     .homepage {
@@ -282,7 +286,7 @@ aside ul {
 .photo-arthur {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 400px;
+    height: 100%;
 }
 @media (min-width: 976px) {
     .photo-arthur {
@@ -290,7 +294,7 @@ aside ul {
     }
 }
 .photo-arthur {
-    width: 100%;
+    width: 500px;
 }
 @media (min-width: 976px) {
     .homepage-content {
