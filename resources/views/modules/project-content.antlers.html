@@ -28,10 +28,10 @@
             <div class="video-container">
                 {{ if video_link | is_embeddable }}
                     <!-- Youtube and Vimeo -->
-                    <iframe class="responsive-iframe" src="{{ video_link | embed_url }}"></iframe>
+                    <iframe class="video responsive-iframe" src="{{ video_link | embed_url }}"></iframe>
                 {{ else }}
                     <!-- Other HTML5 video types -->
-                    <video src="{{ video_link | embed_url }}"></video>
+                    <video class="video" src="{{ video_link | embed_url }}"></video>
                 {{ /if }}
             </div>
         </div>
