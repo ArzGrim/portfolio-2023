@@ -57,7 +57,7 @@
     padding: 25px;
 }
 
-.project-content div:nth-child(1n + 2) {
+.project-content > div:nth-child(1n + 2) {
     border-top: 1px solid #000;
 }
 
