@@ -276,6 +276,7 @@ main {
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
     border-bottom-width: 1px;
     border-left-width: 0px;
+
 }
 @media (min-width: 976px) {
     .photo-arthur {
@@ -287,6 +288,7 @@ main {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
+
 }
 @media (min-width: 976px) {
     .photo-arthur {
@@ -297,6 +299,9 @@ main {
     width: 500px;
 }
 @media (min-width: 976px) {
+    .photo-arthur {
+        width: 100%;
+    }
     .homepage-content {
         grid-row: 1 / 1;
     }

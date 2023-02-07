@@ -18,7 +18,8 @@ main {
     @apply border-b border-l-0 lg:border-b-0 lg:border-l;
     object-fit: cover;
     @apply h-[100%] lg:h-img-desktop;
-    width: 500px;
+    @apply w-[500px] lg:w-[100%];
+
 }
 
 .homepage-content {
