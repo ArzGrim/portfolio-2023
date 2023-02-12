@@ -8,7 +8,6 @@
 
 /* ———————————————————————————————— Pages */
 @import "style-01/pages/_homepage.css";
-/* !! */
 @import "style-01/pages/_project.css";
 
 /* ———————————————————————————————— Modules */
@@ -17,10 +16,6 @@
 /* @import "style-01/modules/_aside.css"; */
 @import "style-01/modules/_footer.css";
 @import "style-01/modules/_projects-box.css";
-/* ———————— Projects */
-/* !! */
-/* @import "style-01/modules/_highlight.css"; */
-/* @import "style-01/modules/_text.css"; */
 
 @import "tailwindcss/base";
 
