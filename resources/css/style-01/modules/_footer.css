@@ -1,47 +1,36 @@
 footer {
-    @apply hidden lg:grid;
-    @apply grid-cols-01-global-mobile md:grid-cols-01-global-desktop; 
-    @apply grid-rows-auto;
-    @apply col-fullpage-mobile md:col-fullpage-desktop;
-    @apply row-footer;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-
-    
+    @apply hidden md:grid;
+    @apply grid-cols-01__footer;
 }
-footer ul {
+
+footer.active {
     @apply grid;
-    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
-    @apply grid-rows-01-menu-footer lg:grid-rows-auto;
-
-    @apply col-content-mobile md:col-content-mobile;
-    
-}
-
-
-footer ul {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+    @apply grid-cols-01__footer;
+    border: 1px solid #000;
+    z-index: 333;
     background-color: #fff;
-    z-index: 3; 
-    column-gap: 25px;
-    padding-left: 25px;
-    align-items: center;
-    font-weight: var(--font-light);
-    grid-auto-flow: column;
-
-    @apply h-[20vh] lg:h-auto;
-    @apply pt-[20px] lg:pt-0;
 }
 
-
-.is-visible-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 50px;
-    left: 0;
-
+footer ul {
     @apply grid;
-    grid-template-rows: auto;
+    @apply md:grid-cols-01__menu-desktop;
+    @apply md:content-center;
+    grid-gap: 25px;
+    padding-left: 25px;
+    @apply pt-[25px] md:pt-0;
+    @apply pb-[25px] md:pb-0;
+}
 
+footer ul li {
+    align-self: center;
+}
+
+footer ul li a {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+footer ul li a:hover {
+    font-weight: 500;
+    letter-spacing: 0px;
 }

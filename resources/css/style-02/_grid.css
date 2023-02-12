@@ -1,23 +1,43 @@
-body {
+/* body {
     @apply grid;
-    @apply grid-cols-02-global-mobile lg:grid-cols-02-global-desktop;
-    @apply grid-rows-02-global;
-    height: 100vh;
-    column-gap: 25px;
-    z-index: 1000;
-    position: relative;
+    @apply grid-cols-02-global-mobile md:grid-cols-02-global-tablet lg:grid-cols-02-global-desktop xl:grid-cols-02-global-xldesktop;
+    grid-template-rows: 100px 100px auto 100px;
+
 }
+
+footer,
+main,
+header,
+aside {
+    @apply col-global-center;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 20px;
+    z-index: 333;
+}
+
+
+
 
 header {
-    @apply col-header-desktop;
-    @apply row-02-header;    
+    z-index: 666;
+    position: sticky;
+    box-sizing: border-box;
+    height: 100px;
+    top: 15px;
 }
-
 aside {
-    @apply col-aside-desktop;
-    @apply row-02-header;
+    z-index: 666;
+    position: sticky;
+    box-sizing: border-box;
+    height: 50px;
+    top: 130px;
 }
 
-main {
-    @apply col-main-desktop;
-}
+footer {
+    position: sticky;
+    box-sizing: border-box;
+    height: 100px;
+    bottom: 15px;
+} */
+

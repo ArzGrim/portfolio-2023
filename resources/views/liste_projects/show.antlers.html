@@ -1,36 +1,26 @@
 <div class="project pages">
-    
-    
     {{ collection:liste_projects }}
-        <a class="button-return" href="/portfolio">Retour</a>
+    <a class="button-return" href="/portfolio">Retour</a>
 
-
-        <div class="hero-project project-module">
-            <div class="project-thumbnail">
-                {{ project_thumbnail }}
-                    <img class="thumbnail" src="{{ url }}" alt="">
-                {{ /project_thumbnail }}
-            </div>
-            <div class="text-box">
-                <h2>{{ title }}</h2>
-                {{# <div class="tags">photo / video / graphisme</div> #}}
-                <p>{{ project_description }}</p>
-            </div>
+    <div class="hero-project project-module">
+        <div class="project-thumbnail">
+            {{ project_thumbnail }}
+            <img class="thumbnail" src="{{ url }}" alt="" />
+            {{ /project_thumbnail }}
         </div>
-
-
-        <div class="project-content-container">
-            <div class="project-content">
-                {{ partial:modules/project-content }}
-            </div>
-            <div class="project-sidebar">
-                {{ partial:modules/project-sidebar }}
-            </div>
+        <div class="text-box">
+            <h2>{{ title }}</h2>
+            {{#
+            <div class="tags">photo / video / graphisme</div>
+            #}}
+            <p>{{ project_description }}</p>
         </div>
-    
-        
+    </div>
+
+    <div class="project-container">
+        <div class="project-content">{{ partial:modules/project-content }}</div>
+        <div class="project-sidebar">{{ partial:modules/project-sidebar }}</div>
+    </div>
+
     {{ collection:liste_projects }}
-        
-        
 </div>
-

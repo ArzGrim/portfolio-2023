@@ -1,35 +1,26 @@
 /* ———————————————————————————————— Global */
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
-
-
 
 @import "fonts/drafting-mono.css";
 @import "style-01/_main.css";
 @import "style-01/_grid.css";
 
-
-
 @import "site.css";
-
 
 /* ———————————————————————————————— Pages */
 @import "style-01/pages/_homepage.css";
-@import "style-01/pages/_portfolio.css";
+/* !! */
 @import "style-01/pages/_project.css";
 
 /* ———————————————————————————————— Modules */
 /* ———————— Pages */
 @import "style-01/modules/_header.css";
-@import "style-01/modules/_aside.css";
+/* @import "style-01/modules/_aside.css"; */
 @import "style-01/modules/_footer.css";
 @import "style-01/modules/_projects-box.css";
 /* ———————— Projects */
-@import "style-01/modules/_highlight.css";
-@import "style-01/modules/_text.css";
-
-
-
-
+/* !! */
+/* @import "style-01/modules/_highlight.css"; */
+/* @import "style-01/modules/_text.css"; */
 
 @import "tailwindcss/base";
 

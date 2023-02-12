@@ -1,6 +1,4 @@
-
-
-body {
+/* body {
     @apply grid;
     @apply grid-cols-01-global-mobile md:grid-cols-01-global-desktop;
 }
@@ -51,4 +49,96 @@ aside ul {
     column-gap: 25px;
 }
 
+ */
 
+body.active {
+    @apply grid-rows-01__menu-open;
+    @apply grid-areas-01__layout-menu;
+}
+
+body {
+    @apply grid;
+    @apply grid-cols-01__global-mobile md:grid-cols-01__global-tablet lg:grid-cols-01__global-desktop xl:grid-cols-01__global-desktop-xl;
+    @apply grid-rows-01__global-desktop;
+    @apply grid-areas-01__layout-mobile md:grid-areas-01__layout-tablet lg:grid-areas-01__layout-desktop;
+    overflow: hidden;
+}
+
+header {
+    @apply grid-in-header;
+}
+
+aside {
+    @apply grid-in-aside;
+    @apply hidden md:block;
+}
+
+aside.active {
+    @apply block;
+}
+
+main {
+    @apply grid-in-main;
+}
+main.active {
+    @apply hidden;
+}
+
+footer {
+    @apply grid-in-footer;
+    @apply hidden md:block;
+}
+
+header::before {
+    pointer-events: none;
+    content: "";
+
+    @apply absolute left-0;
+    @apply h-[75px];
+    @apply w-screen;
+
+    @apply border-black;
+    @apply border-t;
+    @apply border-b;
+}
+
+aside::before {
+    pointer-events: none;
+    content: "";
+    @apply hidden md:block;
+
+    @apply absolute top-0;
+    @apply h-screen;
+    @apply w-[145px];
+
+    @apply border-black;
+    @apply border-r;
+    @apply border-l md:border-l-0;
+}
+
+main::before {
+    pointer-events: none;
+    content: "";
+
+    @apply absolute top-0;
+    @apply h-screen;
+    @apply w-01__full-mobile md:w-01__full-tablet lg:w-[1000px] xl:w-[1400px];
+
+    @apply border-black;
+    @apply border-l;
+    @apply border-r;
+}
+
+footer::before {
+    pointer-events: none;
+    content: "";
+    @apply hidden md:block;
+
+    @apply absolute left-0;
+    @apply h-[45px];
+    @apply w-screen;
+
+    @apply border-black;
+    @apply border-t;
+    @apply border-b;
+}

@@ -1,66 +1,52 @@
-main {
-    @apply overflow-y-hidden;
-}
-
 .homepage {
-    @apply overflow-y-scroll overflow-x-hidden lg:overflow-hidden;
-    @apply grid-rows-auto;
-    @apply grid;
-    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
-}
+    @apply overflow-y-scroll md:overflow-hidden;
 
+    @apply grid;
+    @apply grid-cols-01__content-mobile md:grid-cols-01__content-desktop;
+    @apply grid-rows-01__homepage-mobile md:grid-rows-01__homepage-desktop;
+    column-gap: 25px;
+}
 
 .photo-arthur {
-    @apply col-full-mobile lg:col-half-right ;
-    @apply lg:row-inline;
-    padding: 25px;
-    @apply border-black;
-    @apply border-b border-l-0 lg:border-b-0 lg:border-l;
+    @apply col-01__full md:col-01__half-right;
+    @apply row-01__homepage-top md:row-01__full;
+    @apply h-[400px] sm:h-01__homepage-img-mobile md:h-01__homepage-img-desktop;
+    @apply w-01__homepage-img;
     object-fit: cover;
-    @apply h-[100%] lg:h-img-desktop;
-    @apply w-[500px] lg:w-[100%];
-
+    padding: 25px;
+    @apply border-l-0 md:border-l border-black border-solid;
+    @apply border-b md:border-b-0 border-black border-solid;
 }
 
 .homepage-content {
-    @apply lg:row-inline;
-    @apply col-full-mobile lg:col-half-left;
+    @apply col-01__full md:col-01__half-left;
+    @apply row-01__homepage-bottom md:row-01__full;
+    @apply self-start md:self-center;
     padding: 25px;
-    align-self: center;
-}
-
-.homepage-content p {
-    margin-top: 45px;
-    font-weight: 400;
-    @apply text-p-mobile lg:text-p-desktop;
-}
-
-.homepage-content h2 {
-    text-transform: uppercase;
-    font-family: var(--font-one);
-    font-weight: 800;
-    @apply text-p-mobile lg:text-p-desktop;
 }
 
 .homepage-content h1 {
-    @apply text-h-mobile lg:text-h-desktop;
-    font-family: var(--font-one);
-    text-transform: uppercase;
+    @apply text-01__home-h1-mobile lg:text-01__home-h1-desktop;
+    @apply tracking-title-desktop;
     font-weight: 800;
+    @apply leading-[30px] md:leading-[40px];
+    @apply pb-[15px] lg:pb-[25px];
 }
 
-.homepage-content ul,
-.homepage-content .logline {
-    margin-top: 5px;
+.homepage-content h2 {
+    @apply text-01__h2-mobile lg:text-01__h2-desktop;
+    @apply tracking-title-desktop;
+    font-weight: 800;
+    @apply leading-[23px];
+    @apply pb-[15px] lg:pb-[25px];
 }
-
-.homepage-content ul li{
-    font-weight: 500;
-    @apply text-p-mobile lg:text-p-desktop;
+.logline,
+.homepage-content p {
+    @apply pb-[15px] lg:pb-[25px];
 }
-
-
-.homepage-content .logline {
-    @apply text-p-mobile lg:text-p-desktop;
+.homepage-content p,
+.interest ul li,
+.logline {
+    @apply text-01__p-mobile lg:text-01__p-desktop;
+    font-weight: 300;
 }
-

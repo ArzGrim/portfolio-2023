@@ -1,84 +1,77 @@
 body {
-  height: 100vh;
+    height: 100vh;
 }
 
+.pages {
+    height: calc(100vh - 170px);
+}
 
 .pages {
-  font-family: 'Drafting* Mono';
-  font-weight: 400;
-  @apply border-b border-black border-solid lg:border-b-0;
+    font-family: "Drafting* Mono";
+    font-weight: 400;
+    @apply border-b border-black border-solid md:border-b-0;
 }
 
 .portfolio,
 .project {
-  overflow-y: scroll;
-  scrollbar-color: #000 #fff;
-  scrollbar-width: thin;
+    overflow-y: scroll;
+    scrollbar-color: #000 #fff;
+    scrollbar-width: thin;
 }
 
 .portfolio:-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  border: 3px solid #000;
+    border-radius: 6px;
+    border: 3px solid #000;
+}
+
+footer,
+header,
+h1,
+h2 {
+    text-transform: uppercase;
+    font-family: var(--font-one);
 }
 
 footer,
 header {
-  text-transform: uppercase;
-  font-family: var(--font-one);
-  font-weight: 200;
+    font-weight: 200;
 }
+
 header a {
-  @apply text-h-desktop;
+    @apply text-h-desktop;
 }
 footer a {
-  @apply text-h-mobile;
-  text-transform: capitalize;
+    @apply text-h-mobile;
+    text-transform: capitalize;
 }
 
 a {
-  color: #000;
+    color: #000;
 }
 
+img {
+    width: 100px;
+    height: 100px;
+}
 
-
-
-
-
-
-
-
-
- /* width */
- ::-webkit-scrollbar {
-  width: 15px;
-  border-radius: 0px;
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 0px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff;
-  border-left: 1px solid #000;
+    background: #fff;
+    border-left: 1px solid #000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000;
+    background: #000;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #000;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    background: #000;
+}

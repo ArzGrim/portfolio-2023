@@ -1,57 +1,47 @@
-.project-box:hover {
-    background-color: #000;
-    color: #fff;
+.project-box {
+    @apply grid;
+    @apply grid-cols-01__content-mobile md:grid-cols-01__content-desktop;
+    column-gap: 25px;
+    padding: 25px 25px;
+    border-top: 1px solid #000;
 }
-
 .project-box:first-child {
     border-top: 0px;
 }
 
-.project-box {
-    padding: 25px;
-    border-top: 1px solid #000;
-    background-color: #fff;
-    width: 100%;
-    @apply grid;
-    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
-    @apply grid-rows-01-content-mobile lg:grid-rows-auto;
-    @apply gap-[25px];
+.project-box:hover {
+    color: #fff;
+    background-color: #000;
 }
-
 
 .project-box img {
-    @apply col-feed-thumbnail-mobile lg:col-feed-thumbnail-desktop;
-    @apply row-feed-thumbnail-mobile lg:row-feed-thumbnail-desktop;
-    @apply w-[100%];
-    @apply h-[250px] md:h-[300px];
-    object-fit: cover;
+    @apply col-01__full md:col-01__third-left;
     border: 1px solid #000;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    @apply mb-[25px] md:mb-0;
+}
+.project-box .text-box {
+    @apply col-01__full md:col-01__third-middle;
 }
 
-
 .text-box {
-    @apply col-feed-text-mobile lg:col-feed-text-desktop;
-    @apply row-feed-text-mobile lg:row-feed-text-desktop;
-    @apply grid;
-    @apply grid-rows-auto;
-    height: 100%;
+    @apply flex flex-col;
+    @apply justify-between;
 }
 
 .text-box h2 {
-    place-self: start;
-    font-family: var(--font-one);
-    text-transform: uppercase;
+    @apply text-01__h2-mobile lg:text-01__h2-desktop;
+    @apply tracking-title-desktop;
     font-weight: 800;
-    @apply tracking-title-mobile lg:tracking-title-desktop;
-    @apply leading-title;
-    @apply text-h-mobile lg:text-h-desktop;
-}
+    @apply leading-[23px];
 
+    @apply mb-[25px] md:mb-0;
+}
 
 .text-box p {
-    place-self: end;
-    font-weight: 400;
-    @apply text-p-mobile lg:text-p-desktop;
+    @apply text-01__p-mobile lg:text-01__p-desktop;
+    font-weight: 300;
+    @apply leading-[16px] lg:leading-[20px];
 }
-
-

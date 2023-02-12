@@ -9,6 +9,7 @@
     "production": "mix --production"
   },
   "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^3.0.1",
     "@tailwindcss/typography": "^0.5.1",
     "autoprefixer": "^10.4.13",
     "cross-env": "^7.0",
@@ -517,5 +518,13 @@
     "yargs-parser": "^21.1.1"
   },
   "author": "Arthur",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArzGrim/portfolio-2023.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArzGrim/portfolio-2023/issues"
+  },
+  "homepage": "https://github.com/ArzGrim/portfolio-2023#readme"
 }

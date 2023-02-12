@@ -1,75 +1,59 @@
-header {
-    @apply row-header;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    @apply grid;
-    @apply grid-cols-01-global-mobile md:grid-cols-01-global-desktop;
-    @apply grid-rows-auto;
-    @apply col-fullpage-mobile md:col-fullpage-desktop;
-}
-
 nav {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    background-color: #fff;
-    z-index: 3;
-    @apply grid lg:block;
-    @apply grid-cols-01-burger-mobile;
+    @apply grid;
+    @apply grid-cols-01__header-mobile md:grid-cols-01__header-desktop;
+    @apply grid-rows-01__header-mobile md:grid-rows-01__header-desktop;
+    @apply content-center;
+    /* height: 100%; */
+    @apply h-auto md:h-[100%];
+    /* background-color: #fff; */
 
-    @apply col-content-mobile md:col-content-mobile;
+    z-index: 888;
 }
-
-nav ul {
-    @apply hidden lg:grid;
-    @apply grid-cols-01-content-mobile md:grid-cols-01-content-desktop;
-}
-
-.is-active {
-    @apply grid-rows-01-menu;
-}
-
-
-
-
-
-
-
-header a:hover, footer a:hover {
-    font-weight: 700;
-}
-header,
-footer {
-    z-index: 9999;
-}
-.is-visible-header {
-    @apply block;
-    grid-row: 2 / 2;
-    height: 50vh;
-}
-
-
-
 
 .menu {
-    height: 100%;
-    align-items: center;
-    column-gap: 25px;
-    padding-left: 25px;
-    @apply border-t border-solid border-black lg:border-t-0;
-    @apply pt-[20px] lg:pt-0;
-    grid-column: 1 / -1;
+    @apply hidden md:grid;
+    @apply md:grid-cols-01__menu-desktop;
+
+    /* grid-row: 2 / 2; */
+    padding: 25px;
+    @apply pl-[25px];
+    @apply pt-[25px] md:pt-0;
+    @apply pb-[25px] md:pb-0;
+    @apply bg-white md:bg-transparent;
+    z-index: 999;
+}
+.menu.active {
+    @apply grid;
+    @apply col-01__full;
+    grid-row: 2 / 3;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
 }
 
-
-.burger-container {
-    @apply col-content-desktop;
-    @apply inline-block lg:hidden;
-    position: relative;
-    left: 50%;
+.menu.active::after {
+    content: "";
+    height: 100%;
+    position: absolute;
     top: 0;
-    transform: translatex(-50%);
-    border-left: 1px solid #000;
-    grid-row: 1 / 1;
+    left: 5px;
+    width: calc(100vw - 10px);
+    border: 1px solid #000;
+    pointer-events: none;
+}
+.page-name {
+    letter-spacing: 1px;
+}
+.page-name:hover {
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.burger-button {
+    @apply block md:hidden;
+    grid-column: 2 / 2;
+    @apply border-l border-solid border-black;
+    height: 75px;
 }
 
 .burger {
@@ -80,8 +64,9 @@ footer {
     left: 50%;
     position: relative;
     transform: translate(-50%);
-  }
-  .burger span {
+}
+
+.burger span {
     width: 100%;
     height: 5px;
     background-color: #000;
@@ -90,31 +75,30 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     transition: background-color 0.5s ease-in-out;
-  }
-  .burger span::before, .burger span::after {
-    content: '';
+}
+.burger span::before,
+.burger span::after {
+    content: "";
     position: absolute;
-    width: 100%; 
+    width: 100%;
     height: 5px;
     background: #000;
     transition: transform 0.5s ease-in-out;
-  }
-  .burger span::before {
+}
+.burger span::before {
     transform: translateY(-10px);
-  }
-  
-  .burger span::after {
+}
+
+.burger span::after {
     transform: translateY(10px);
-  }
-  
-  .burger.active span {
+}
+
+.burger.active span {
     background-color: transparent;
-  }
-  .burger.active span::before {
+}
+.burger.active span::before {
     transform: translateY(0px) rotateZ(45deg);
-  }
-  .burger.active span::after {
+}
+.burger.active span::after {
     transform: translateY(0px) rotateZ(-45deg);
-  }
-
-
+}
